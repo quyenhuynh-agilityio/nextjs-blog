@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "documentation",
+    "title": "Documentation",
+    "text": "Find in-depth information about Next.js feature API."
+  },
+  {
+    "slug": "learn",
+    "title": "Learn",
+    "text": "Learn about Next.js in an interactive course with quizzes."
+  },
+  {
+    "slug": "fast-refresh",
+    "title": "Fast Refresh",
+    "text": "Fast, reliable live-editing experience, as proven at Facebook scale."
+  }
+]

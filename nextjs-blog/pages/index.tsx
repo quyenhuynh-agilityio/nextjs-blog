@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
+import NextLink from 'next/link';
 
 import { catList } from '../constants';
 
@@ -12,31 +12,32 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
+        <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-
-        <div className="title">
-          Read{' '}
-          <Link href="/posts/cat">
-            <a>the first page!</a>
-          </Link>
-        </div>
         <hr />
+        <NextLink href="/about">
+          <h3>This is About page</h3>
+        </NextLink>
+        <NextLink href="/blog">
+          <h3>This is Blog page</h3>
+        </NextLink>{' '}
+        <NextLink href="/user">
+          <h3>This is User page</h3>
+        </NextLink>
         <ul>
           {catList.map((item, index) => {
             const { type } = item || {};
             return (
               <li key={`${type}-${index}`}>
-                <Link as={`/posts/${type}`} href="/posts/[slug]">
+                <NextLink as={`/posts/${type}`} href="/posts/[slug]">
                   <a>{type}</a>
-                </Link>
+                </NextLink>
               </li>
             );
           })}
         </ul>
       </main>
-
       <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
