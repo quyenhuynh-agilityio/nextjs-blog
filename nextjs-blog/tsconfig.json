@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
