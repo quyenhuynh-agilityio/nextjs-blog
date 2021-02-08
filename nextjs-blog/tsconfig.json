@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "baseUrl": "./src/",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": ".",
     "paths": {
       "tslib" : ["path/to/node_modules/tslib/tslib.d.ts"]
     },
